@@ -17,8 +17,8 @@ import {
   NavigationContainer, 
   NavLinks, 
   NavLink, 
-  LogoContainer, 
-} from './navigation.styles';
+  LogoContainer 
+}from './navigation.styles';
 
 
 const Navigation = () => {
