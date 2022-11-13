@@ -15,6 +15,7 @@ import {
   import Shop from './routes/shop/shop.component'
   import Checkout from './routes/checkout/checkout.component';
   import { setCurrentUser } from "./store/user/user.action";
+  import { GlobalStyle } from "./global.styles";
  
  const App = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,8 @@ import {
  }, []);
 
   return (
+    <div>
+    <GlobalStyle />
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
@@ -39,6 +42,7 @@ import {
         <Route path='checkout' element={<Checkout />} />
       </Route>
     </Routes>
+    </div>
   );
 };
 
